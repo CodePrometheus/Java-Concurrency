@@ -2,13 +2,17 @@
 Java并发编程
 
 ## 线程
-    创造线程
-    ThreadPool
-    ThreadLocal
+    * 创造线程
+    * ThreadPool
+    * ThreadLocal
+
 
 
 ## 锁
-    互斥与非互斥
-    公平与非公平
-    可重入锁
-    读写锁
+    * 乐观与悲观锁
+    * 公平与非公平锁
+    * 可重入锁与非可重入锁：以ReentrantLock为例
+    * 共享锁和排他锁：以ReentrantReadWriterLock读写锁为例
+    * 自旋锁和阻塞锁
+    * 可中断锁
+    * 锁优化
