@@ -16,3 +16,40 @@ Java并发编程
     * 自旋锁和阻塞锁
     * 可中断锁
     * 锁优化
+    
+## 原子类
+    基本类型原子类
+        AtomicInteger
+        AtomicLong
+        AtomicBoolean
+     
+    数组类型原子类
+        AtomicIntegerArray
+        AtomicLongArray
+        AtomicReferenceArray
+           
+    引用类型原子类
+        AtomicReference
+        AtomicStampedReference
+        AtomicMarkableReference
+        
+    升级类型原子类
+        AtomicIntegerFieldUpdater
+        AtomicLongFieldUpdater
+        AtomicReferenceFieldUpdater
+        
+    Adder累加器
+        LongAdder
+        DoubleAdder
+        
+    Accumulator累加器
+        LongAccumulator
+        DoubleAccumulator  
+        
+
+## CAS
+
+        
+     
+    
+    

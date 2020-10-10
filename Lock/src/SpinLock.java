@@ -10,6 +10,7 @@ public class SpinLock {
     private AtomicReference<Thread> sign = new AtomicReference<>();
 
     public void lock() {
+        //获取当前线程的引用
         Thread current = Thread.currentThread();
         while (!sign.compareAndSet(null, current)) {
             System.out.println(Thread.currentThread().getName() + "自旋获取失败，再次尝试");
