@@ -1,22 +1,23 @@
 # Java-Concurrency
 Java并发编程
 
-## 线程
-    * 创造线程
-    * ThreadPool
-    * ThreadLocal
 
+## 线程
+     创造线程
+     ThreadPool
+     ThreadLocal
 
 
 ## 锁
-    * 乐观与悲观锁
-    * 公平与非公平锁
-    * 可重入锁与非可重入锁：以ReentrantLock为例
-    * 共享锁和排他锁：以ReentrantReadWriterLock读写锁为例
-    * 自旋锁和阻塞锁
-    * 可中断锁
-    * 锁优化
-    
+     乐观与悲观锁
+     公平与非公平锁
+     可重入锁与非可重入锁：以ReentrantLock为例
+     共享锁和排他锁：以ReentrantReadWriterLock读写锁为例
+     自旋锁和阻塞锁
+     可中断锁
+     锁优化
+
+
 ## 原子类
     基本类型原子类
         AtomicInteger
@@ -48,6 +49,12 @@ Java并发编程
         
 
 ## CAS
+    原理
+    应用场景
+    Java中如何利用CAS实现原子操作
+    缺点
+
+
 
         
      
