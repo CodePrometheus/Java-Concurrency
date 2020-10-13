@@ -75,6 +75,11 @@ Java并发编程
     Condition
     CyclicBarrier
 
+
+## AQS
+    state
+    控制线程抢锁和配合的FIFO队列
+    期望协作工具类去实现的获取/释放等重要方法
         
      
     
