@@ -9,11 +9,13 @@ package create;
 public class BothRunnableAndThread {
     public static void main(String[] args) {
         Thread thread = new Thread(() -> System.out.println("来自Runnable的方法")) {
+
+            //这里的run方法已经把父类的run方法覆盖
             @Override
             public void run() {
                 System.out.println("来自Thread的方法");
             }
         };
-        thread.start();
+        thread.start();//来自Thread的方法
     }
 }

@@ -13,6 +13,7 @@ import java.util.TimerTask;
 public class TimerThreadTest {
     public static void main(String[] args) {
         TimerTask task = new TimerTask() { //创建一个新的timer task
+
             @Override
             public void run() { //定时器任务执行的操作
                 Date date = new Date();//创建Date对象
