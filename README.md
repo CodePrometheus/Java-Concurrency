@@ -3,7 +3,9 @@ Java并发编程
 
 
 ## 线程
-     创造线程
+     创建线程的两种方法
+     正确启动线程
+     正确停止线程
      ThreadPool
      ThreadLocal
 
