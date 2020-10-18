@@ -6,6 +6,8 @@ Java并发编程
      创建线程的两种方法
      正确启动线程
      正确停止线程
+     线程六大生命周期
+     Thread和Object中的重要方法
      ThreadPool
      ThreadLocal
 
