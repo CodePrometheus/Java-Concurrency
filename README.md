@@ -8,6 +8,7 @@ Java并发编程
      正确停止线程
      线程六大生命周期
      Thread和Object中的重要方法
+     线程的属性
      ThreadPool
      ThreadLocal
 
