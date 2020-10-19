@@ -2,7 +2,8 @@ package importantmethod.sleep;
 
 /**
  * 1.让线程在预期的时间执行，其他时候不要占用cpu资源
- * 2.不释放锁
+ * 2.不释放锁，直到规定时间后再执行，休眠期间如果被中断，会抛出异常并清除中断状态
+ * 3.Sleep方法可以让线程进入waiting状态，并且不占用CPU资源
  *
  * @Author: zzStar
  * @Date: 10-17-2020 16:31

@@ -2,6 +2,7 @@ package importantmethod.join;
 
 /**
  * 新的线程加入了，要等待它执行完再出发
+ * 注意 ！ join的底层 native方法  线程执行后自动notifyAll()
  *
  * @Author: zzStar
  * @Date: 10-18-2020 12:11
