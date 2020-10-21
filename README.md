@@ -35,6 +35,13 @@ Java并发编程
     饥饿
 
 
+## Synchronized
+    作用用法
+    性质
+    原理
+    缺陷
+
+
 ## 原子类
     基本类型原子类
         AtomicInteger
