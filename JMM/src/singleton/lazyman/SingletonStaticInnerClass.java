@@ -9,7 +9,6 @@ package singleton.lazyman;
 public class SingletonStaticInnerClass {
 
     private SingletonStaticInnerClass() {
-
     }
 
     public static SingletonStaticInnerClass getInstance() {

@@ -19,7 +19,7 @@ public class SingletonDoubleCheck {
 
         if (instance == null) {
             synchronized (SingletonDoubleCheck.class) {
-                // 第二个线程进来做一个判断检查
+                // 第二个线程进来做一个判断检查，依然是空，才创建实例
                 if (instance == null) {
                     instance = new SingletonDoubleCheck();
                 }

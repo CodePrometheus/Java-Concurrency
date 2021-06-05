@@ -1,7 +1,7 @@
 package singleton.hungryman;
 
 /**
- * 单例实现之二 -> 饿汉式（静态代码块）
+ * 单例实现之二 -> 饿汉式（静态代码块） 可用
  *
  * @Author: zzStar
  * @Date: 10-20-2020 10:24

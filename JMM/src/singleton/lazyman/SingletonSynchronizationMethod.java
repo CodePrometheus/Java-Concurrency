@@ -13,6 +13,7 @@ public class SingletonSynchronizationMethod {
     private SingletonSynchronizationMethod() {
     }
 
+    // 区别于三，就是简单的在方法上加synchronized
     public synchronized static SingletonSynchronizationMethod getInstance() {
         // 适用于多线程环境
         if (instance == null) {

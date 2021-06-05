@@ -3,6 +3,11 @@ package volatileusage;
 /**
  * 演示可见性带来的问题（local cache 和 shared cache 的同步问题）
  * 第二个线程可能看不到前一个线程的操作，出现b=3,a=1
+ * <p>
+ * 普通三种情况
+ * a=3,b=2
+ * a=1,b=2
+ * a=3,b=2
  *
  * @Author: zzStar
  * @Date: 10-19-2020 17:07
@@ -16,6 +21,8 @@ public class FieldVisibility {
     // "近朱者赤" 实现了轻量级的同步
     // 作为刷新之前变量的触发器
     volatile int b = 2;
+    // 不加volatile会出现b=3,a=1
+    // int b = 2;
 
     private void change() {
         a = 3;

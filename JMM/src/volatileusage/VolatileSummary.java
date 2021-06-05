@@ -9,7 +9,7 @@ package volatileusage;
 public class VolatileSummary {
 
     /**
-     * Volatile是一种同步机制，比synchronized或者Lock相关类更轻量，因为使用Volatile并不会发生上下文切换等开销恒大的行为
+     * Volatile是一种同步机制，比synchronized或者Lock相关类更轻量，因为使用Volatile并不会发生上下文切换等开销很大的行为
      *    如果一个变量被修饰Volatile，JVM就知道这个变量可能被并发修改
      *    注意❗ Volatile做不到synchronized那样的原子保护，仅在很有限的场景下才能发挥作用
      */

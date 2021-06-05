@@ -1,7 +1,7 @@
 package singleton.hungryman;
 
 /**
- * 单例实现之一 -> 饿汉式（静态常量）
+ * 单例实现之一 -> 饿汉式（静态常量）可用
  *
  * @Author: zzStar
  * @Date: 10-20-2020 10:20
@@ -15,6 +15,7 @@ public class SingletonStaticFinal {
         return INSTANCE;
     }
 
+    // 单例模式的构造函数都是private
     private SingletonStaticFinal() {
     }
 
