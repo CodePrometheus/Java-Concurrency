@@ -1,10 +1,12 @@
+package completable;
+
 import java.util.concurrent.*;
 
 /**
  * @Author: zzStar
  * @Date: 09-07-2021 22:23
  */
-public class CompletableFutureUsage {
+public class CompletableFutureUsage01 {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         ThreadPoolExecutor executor = new ThreadPoolExecutor(1, 20, 1L, TimeUnit.MINUTES,
