@@ -1,7 +1,9 @@
 # Java-Concurrency
+
 Java并发编程
 
 ## 线程
+
      创建线程的两种方法
      正确启动线程
      正确停止线程
@@ -13,9 +15,9 @@ Java并发编程
      ThreadPool
      ThreadLocal
      线程核心知识总结
-     
 
 ## 锁
+
      乐观与悲观锁
      公平与非公平锁
      可重入锁与非可重入锁：以ReentrantLock为例
@@ -23,9 +25,9 @@ Java并发编程
      自旋锁和阻塞锁
      可中断锁
      锁优化
-     
-     
+
 ## 死锁
+
     死锁的发生
     定位死锁
     哲学家进餐问题与解决
@@ -33,15 +35,15 @@ Java并发编程
     活锁问题
     饥饿
 
-
 ## Synchronized
+
     作用用法
     性质
     原理
     缺陷
 
-
 ## 原子类
+
     基本类型原子类
         AtomicInteger
         AtomicLong
@@ -69,52 +71,63 @@ Java并发编程
     Accumulator累加器
         LongAccumulator
         DoubleAccumulator  
-        
 
 ## CAS
+
     原理
     应用场景
     Java中如何利用CAS实现原子操作
     缺点
-    
 
 ## 不可变性
+
     final的作用与用法
     不可变性
     栈封闭
 
 ## 并发容器
+
     ConcurrentHashMap
     CopyOnWriteArrayList
     并发队列
         阻塞队列
         非阻塞队列
-    
 
 ## 控制并发流程
+
     各个线程之间相互协调
     CountDownLatch(一等多，多等一)
     Semaphore(控制并发总量)
     Condition
     CyclicBarrier
 
-
 ## AQS
+
     state
     控制线程抢锁和配合的FIFO队列
     期望协作工具类去实现的获取/释放等重要方法
-        
-     
-## Future    
+
+## Future
+
     Future接口
     主要方法
     FutureTask
     注意点
-    
+    CompletableFuture
 
 ## JMM
+
     内存模型
     重排序
     可见性
     原子性
     常见问题
+
+## Queue
+    
+    ArrayBlockingQueue
+    LinkedBlockingQueue
+    LinkedTransferQueue
+    PriorityBlockingQueue
+    SynchronousQueue
+    DelayQueue

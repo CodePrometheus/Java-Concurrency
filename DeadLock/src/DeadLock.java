@@ -1,7 +1,5 @@
-package threadsecurity;
-
 /**
- * 演示死锁 发布逸出
+ * 手写死锁 发布逸出
  *
  * @Author: zzStar
  * @Date: 10-19-2020 11:46
