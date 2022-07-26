@@ -11,7 +11,7 @@ public class WaitNotifyReleaseOwnMonitor {
     private static volatile Object resource2 = new Object();
 
     public static void main(String[] args) {
-        var thread1 = new Thread(() -> {
+        Thread thread1 = new Thread(() -> {
             synchronized (resource1) {
                 System.out.println("Thread1 got resource1 lock");
                 synchronized (resource2) {
