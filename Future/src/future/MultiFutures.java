@@ -23,7 +23,7 @@ public class MultiFutures {
 
         //获取结果,将会每两个打印一次
         for (int i = 0; i < 20; i++) {
-            var future = futures.get(i);
+            Future future = futures.get(i);
             try {
                 System.out.println(future.get());
             } catch (InterruptedException | ExecutionException e) {

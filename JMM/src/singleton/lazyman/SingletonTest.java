@@ -10,17 +10,17 @@ import java.util.concurrent.*;
  * @Author: zzStar
  * @Date: 12-08-2021 14:03
  */
-public class Singleton {
+public class SingletonTest {
 
-    private static Singleton singleton = null;
+    private static SingletonTest singleton = null;
 
     private Integer x = 1;
 
-    public static Singleton getInstance() {
+    public static SingletonTest getInstance() {
         if (singleton == null) {
-            synchronized (Singleton.class) {
+            synchronized (SingletonTest.class) {
                 if (singleton == null) {
-                    singleton = new Singleton();
+                    singleton = new SingletonTest();
                 }
             }
         }
@@ -38,27 +38,27 @@ public class Singleton {
         for (int i = 0; i < 1000_000; i++) {
             barrier.reset();
             System.out.println("i = " + i);
-            List<Callable<Singleton>> list = new ArrayList<>();
+            List<Callable<SingletonTest>> list = new ArrayList<>();
             for (int j = 0; j < 500; j++) {
                 list.add(() -> {
                     barrier.await();
-                    Singleton instance = Singleton.getInstance();
+                    SingletonTest instance = SingletonTest.getInstance();
                     if (instance.x == null) {
                         throw new RuntimeException("拿到了未被初始化的对象");
                     }
                     return instance;
                 });
             }
-            List<Future<Singleton>> futures = pool.invokeAll(list);
-            Set<Singleton> set = new HashSet<>();
-            for (Future<Singleton> future : futures) {
+            List<Future<SingletonTest>> futures = pool.invokeAll(list);
+            Set<SingletonTest> set = new HashSet<>();
+            for (Future<SingletonTest> future : futures) {
                 set.add(future.get());
             }
             if (set.size() > 1) {
                 System.out.println("并发生成多实例");
                 throw new RuntimeException();
             }
-            Singleton.removeInstance();
+            SingletonTest.removeInstance();
         }
         System.out.println("正常结束");
     }
