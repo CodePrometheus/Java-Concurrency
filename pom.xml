@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.star.concurrency</groupId>
+    <artifactId>Java-Concurrency</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <modules>
+        <module>AQS</module>
+        <module>Atomic</module>
+        <module>Cache</module>
+        <module>CAS</module>
+        <module>Collection</module>
+        <module>DeadLock</module>
+        <module>FlowControl</module>
+        <module>Future</module>
+        <module>Immutable</module>
+        <module>Interview</module>
+        <module>JMM</module>
+        <module>Lock</module>
+        <module>Queue</module>
+        <module>Synchronized</module>
+        <module>Thread</module>
+    </modules>
+    <name>Java-Concurrency</name>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>
